@@ -1,0 +1,32 @@
+//
+// Do any local configuration here
+//
+
+// Consider adding the 1918 zones here, if they are not used in your
+// organization
+//include "/etc/bind/zones.rfc1918";
+
+// Zona Directa (INSTI)
+zone "techcaparrella.local" {
+	type master;
+	file "/etc/bind/db.techcaparrella.local";	
+};
+
+
+// Zona Inversa (INSTI)
+zone "16.168.192.in-addr.arpa" {
+	type master;
+	file "/etc/bind/db.192";
+};
+
+// Zona Directa (CASA)
+//zone "techcaparrella.local" {
+//	type master;
+//	file "/etc/bind/db.techcaparrella1.local";
+//};
+
+// Zona Inversa (CASA)
+//zone "8.168.192.in-addr.arpa" {
+//        type master;
+//        file "/etc/bind/db.1921";
+//};
