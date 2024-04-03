@@ -1,0 +1,4 @@
+# <Device name>   <File system>   <Size>
+# File system is got from ocs-get-dev-info. It might be different from that of blkid or parted.
+/dev/sdb1 vfat 512M
+/dev/sdb2 ext4 57.8G
